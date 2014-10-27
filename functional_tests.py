@@ -2,7 +2,7 @@ from selenium import webdriver
 import unittest
 
 ##Original version of the file. Being replaced by unittest code
-# browser = webdriver.Firefox()
+browser = webdriver.Firefox()
 # browser.get('http://localhost:8000')
 
 # assert 'Django' in browser.title
