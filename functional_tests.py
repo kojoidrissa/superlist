@@ -54,7 +54,8 @@ class NewVisitorTest(unittest.TestCase):
         # that the site has generated a unique URL for her -- there is some
         # explanatory text to that effect.
 
-        # She visits that URL - her to-do list is still there. # Satisfied, she goes back to sleep
+        # She visits that URL - her to-do list is still there. 
+        # Satisfied, she goes back to sleep
 
 if __name__ == '__main__':
     unittest.main(warnings = 'ignore')
