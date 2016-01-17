@@ -28,7 +28,7 @@ class NewVisitorTest(unittest.TestCase):
             'Enter a to-do item'
         )
 
-        time.sleep(5)
+        time.sleep(1)
         # She types "Buy peacock feathers" into a text box (Edith's hobby
         # is tying fly-fishing lures)
         inputbox.send_keys('Buy peacock feathers')
@@ -38,7 +38,7 @@ class NewVisitorTest(unittest.TestCase):
         # "1: Buy peacock feathers" as an item in a to-do list
         inputbox.send_keys(Keys.ENTER)
 
-        time.sleep(5)
+        time.sleep(1)
         table = self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
