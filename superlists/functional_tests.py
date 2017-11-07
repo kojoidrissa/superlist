@@ -8,8 +8,16 @@ class NewVisitorTest(unittest.TestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
 
+
     def tearDown(self):
         self.browser.quit()
+
+
+    def check_for_row_in_list_table(self, row_text):
+        table = self.find_element_by_id('id_list_table')
+        rows = self.find_elements_by_tag_name('tr')
+        self.assertIn(row_text, [rows.text for row in rows])
+
 
     def test_can_start_a_list_and_retrieve_it_later(self):
         # Edith has heard about a cool new online to-do app. She goes 
